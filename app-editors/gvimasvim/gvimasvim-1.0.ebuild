@@ -4,10 +4,10 @@
 EAPI=8
 
 DESCRIPTION="Installs vim as a symlink to gvim"
-HOMEPAGE=""
+HOMEPAGE="https://vim.org/"
 SRC_URI=""
 
-LICENSE=""
+LICENSE="vim"
 SLOT="0"
 KEYWORDS="amd64"
 
