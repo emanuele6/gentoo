@@ -11,10 +11,9 @@ EGIT_REPO_URI="https://github.com/baskerville/bspwm.git"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 
 DEPEND="
-	x11-libs/libxcb
 	x11-libs/xcb-util
 	x11-libs/xcb-util-wm
 "
@@ -26,5 +25,5 @@ src_compile() {
 }
 
 src_install() {
-	emake "DESTDIR=${D}" "PREFIX=${EPREFIX}/usr"  install
+	emake "DESTDIR=${D}" "PREFIX=${EPREFIX}/usr" install
 }
