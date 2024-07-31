@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/emanuele6/emanutils.git"
 
 LICENSE="ISC"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
