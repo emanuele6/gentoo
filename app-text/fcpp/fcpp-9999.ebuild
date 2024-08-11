@@ -24,10 +24,6 @@ else
 	SRC_URI="https://daniel.haxx.se/projects/$PN/$P.tar.gz"
 fi
 
-src_compile () {
-	emake
-}
-
 src_install () {
 	dobin ./fcpp
 }
