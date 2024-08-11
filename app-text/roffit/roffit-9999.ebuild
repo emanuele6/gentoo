@@ -27,10 +27,6 @@ else
 	"
 fi
 
-src_compile () {
-	emake
-}
-
 src_install () {
 	dobin ./roffit
 	doman ./roffit.1
