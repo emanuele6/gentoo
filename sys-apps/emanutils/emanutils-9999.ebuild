@@ -5,17 +5,12 @@ EAPI=8
 
 inherit git-r3
 
-DESCRIPTION="Bleeding edge emanutils"
+DESCRIPTION="A collection of exec tools for amd64 GNU/Linux"
 HOMEPAGE="https://github.com/emanuele6/emanutils"
 EGIT_REPO_URI="https://github.com/emanuele6/emanutils.git"
 
 LICENSE="ISC"
 SLOT="0"
-KEYWORDS=""
-
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
 
 src_install() {
 	emake "DESTDIR=${D}" "PREFIX=${EPREFIX}/usr" install
