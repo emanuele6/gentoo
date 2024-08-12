@@ -5,4 +5,7 @@
 		<email>torreemanuele6@gmail.com</email>
 		<name>emanuele6</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">baskerville/bspwm</remote-id>
+	</upstream>
 </pkgmetadata>
