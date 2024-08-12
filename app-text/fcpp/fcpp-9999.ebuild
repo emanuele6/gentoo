@@ -12,16 +12,14 @@ HOMEPAGE="
 LICENSE="BSD"
 SLOT="0"
 
-DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
-if [[ $PV = *9999 ]]; then
+if [[ ${PV} = *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bagder/fcpp.git"
 else
 	KEYWORDS="amd64"
-	SRC_URI="https://daniel.haxx.se/projects/$PN/$P.tar.gz"
+	SRC_URI="https://daniel.haxx.se/projects/${PN}/${P}.tar.gz"
 fi
 
 src_install () {
