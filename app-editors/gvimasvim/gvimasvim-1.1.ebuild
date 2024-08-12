@@ -5,7 +5,8 @@ EAPI=8
 
 DESCRIPTION="Installs vim as a symlink to gvim"
 HOMEPAGE="https://vim.org/"
-SRC_URI=""
+
+S="${WORKDIR}"
 
 LICENSE="vim"
 SLOT="0"
@@ -16,13 +17,10 @@ DEPEND="
 	app-editors/gvim
 "
 RDEPEND="${DEPEND}"
-BDEPEND=""
-
-S="${WORKDIR}"
 
 src_install() {
-	dosym /usr/bin/gvim /usr/bin/vim
-	dosym /usr/bin/gvim /usr/bin/vimdiff
-	dosym /usr/bin/gvim /usr/bin/rvim
-	dosym /usr/bin/gvim /usr/bin/rview
+	dosym gvim /usr/bin/vim
+	dosym gvim /usr/bin/vimdiff
+	dosym gvim /usr/bin/rvim
+	dosym gvim /usr/bin/rview
 }
