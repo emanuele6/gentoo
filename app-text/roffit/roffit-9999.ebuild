@@ -12,18 +12,14 @@ HOMEPAGE="
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
-
-if [[ $PV = *9999 ]]; then
+if [[ ${PV} = *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bagder/roffit.git"
 else
 	KEYWORDS="amd64"
 	SRC_URI="
-		https://codeload.github.com/bagder/$PN/tar.gz/refs/tags/$PV
-			-> $P.tar.gz
+		https://codeload.github.com/bagder/${PN}/tar.gz/refs/tags/${PV}
+			-> ${P}.tar.gz
 	"
 fi
 
