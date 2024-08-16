@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit git-r3
+inherit git-r3 toolchain-funcs
 
 DESCRIPTION="A collection of exec tools for amd64 GNU/Linux"
 HOMEPAGE="https://github.com/emanuele6/emanutils"
@@ -11,6 +11,11 @@ EGIT_REPO_URI="https://github.com/emanuele6/emanutils.git"
 
 LICENSE="ISC"
 SLOT="0"
+
+src_compile() {
+	tc-export CC
+	default
+}
 
 src_install() {
 	emake "DESTDIR=${D}" "PREFIX=${EPREFIX}/usr" install
