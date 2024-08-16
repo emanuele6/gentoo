@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit git-r3
+inherit git-r3 toolchain-funcs
 
 DESCRIPTION="Bleeding edge sxhkd"
 HOMEPAGE="https://github.com/baskerville/sxhkd"
@@ -17,6 +17,11 @@ DEPEND="
 	x11-libs/xcb-util-keysyms
 "
 RDEPEND="${DEPEND}"
+
+src_compile() {
+	tc-export CC
+	default
+}
 
 src_install() {
 	emake "DESTDIR=${D}" "PREFIX=${EPREFIX}/usr" install
