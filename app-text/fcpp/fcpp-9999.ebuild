@@ -12,8 +12,6 @@ HOMEPAGE="
 LICENSE="BSD"
 SLOT="0"
 
-RDEPEND="${DEPEND}"
-
 if [[ ${PV} = *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bagder/fcpp.git"
