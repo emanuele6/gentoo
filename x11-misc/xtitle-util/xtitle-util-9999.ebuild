@@ -11,11 +11,11 @@ HOMEPAGE="https://github.com/baskerville/xtitle"
 LICENSE="BSD-2"
 SLOT="0"
 
-DEPEND="
+RDEPEND="
 	x11-libs/xcb-util-wm
 	!x11-misc/xtitle
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 
 if [[ ${PV} = *9999 ]]; then
 	inherit git-r3

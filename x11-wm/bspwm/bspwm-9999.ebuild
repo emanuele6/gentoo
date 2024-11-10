@@ -12,11 +12,11 @@ EGIT_REPO_URI="https://github.com/baskerville/bspwm.git"
 LICENSE="BSD-2"
 SLOT="0"
 
-DEPEND="
+RDEPEND="
 	x11-libs/xcb-util
 	x11-libs/xcb-util-wm
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 
 src_compile() {
 	tc-export CC

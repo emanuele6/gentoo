@@ -12,11 +12,11 @@ LICENSE="vim"
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND="
+RDEPEND="
 	!app-editors/vim
 	app-editors/gvim
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 
 src_install() {
 	dosym gvim /usr/bin/vim
