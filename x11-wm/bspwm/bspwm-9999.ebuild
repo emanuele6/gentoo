@@ -24,5 +24,10 @@ src_compile() {
 }
 
 src_install() {
-	emake "DESTDIR=${D}" "PREFIX=${EPREFIX}/usr" install
+	local args=(
+		"DESTDIR=${D}"
+		"PREFIX=${EPREFIX}/usr"
+		"DOCPREFIX=${EPREFIX}/usr/share/doc/${PF}"
+	)
+	emake "${args[@]}" install
 }
