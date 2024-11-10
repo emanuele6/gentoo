@@ -12,10 +12,13 @@ EGIT_REPO_URI="https://github.com/baskerville/sxhkd.git"
 LICENSE="BSD-2"
 SLOT="0"
 
-DEPEND="
+RDEPEND="
 	x11-libs/xcb-util-keysyms
 "
-RDEPEND="${DEPEND}"
+DEPEND="
+	${RDEPEND}
+	x11-libs/xcb-util
+"
 
 src_compile() {
 	tc-export CC
