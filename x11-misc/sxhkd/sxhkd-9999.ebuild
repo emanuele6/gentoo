@@ -13,7 +13,6 @@ LICENSE="BSD-2"
 SLOT="0"
 
 DEPEND="
-	x11-libs/xcb-util
 	x11-libs/xcb-util-keysyms
 "
 RDEPEND="${DEPEND}"
